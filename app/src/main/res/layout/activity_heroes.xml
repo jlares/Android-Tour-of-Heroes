@@ -4,10 +4,10 @@
     android:id="@+id/activity_heroes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tourofheroes.HeroesActivity">
+    tools:context="com.example.tourofheroes.HeroActivity">
 
     <fragment
-        android:name="com.example.tourofheroes.HeroesActivityHeroListFragment"
+        android:name="com.example.tourofheroes.HeroActivityHeroesListFragment"
         android:id="@+id/heroes_activity_frag"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

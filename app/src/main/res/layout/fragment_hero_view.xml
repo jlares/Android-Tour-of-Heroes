@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    tools:context="com.example.tourofheroes.HeroDetailFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_hero_employer_img"
+        android:src="@drawable/sample"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/tv_hero_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hero Name"
+            android:layout_toEndOf="@+id/iv_hero_employer_img" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_hero_data2"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/iv_hero_employer_img"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/iv_hero_employer_img"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_hero_city"
+                android:text="Hero City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_hero_power_lvl"
+                android:text="Hero Power Level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
